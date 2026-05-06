@@ -1,0 +1,11 @@
+# 价格
+=IFERROR(INDEX([原料价格.xlsx]原料价格目录!$G:$G,MATCH(TRIM(B5),TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$L:$L,MATCH(TRIM(B5),TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),IFERROR(INDEX([原料价格.xlsx]原料价格目录!$G:$G,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$L:$L,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),"未找到"))))
+
+# 物料编码
+=IFERROR(INDEX([原料价格.xlsx]原料价格目录!$D:$D,MATCH(TRIM(B5),TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$E:$E,MATCH(TRIM(B5),TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),IFERROR(INDEX([原料价格.xlsx]原料价格目录!$D:$D,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$E:$E,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),"未找到"))))
+
+# 完整名称
+=IFERROR(INDEX([原料价格.xlsx]原料价格目录!$D:$D,MATCH(TRIM(B5),TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$E:$E,MATCH(TRIM(B5),TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),IFERROR(INDEX([原料价格.xlsx]原料价格目录!$D:$D,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$E:$E,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),"未找到"))))
+
+# 规格
+=IFERROR(INDEX([原料价格.xlsx]原料价格目录!$E:$E,MATCH(TRIM(B5),TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$H:$H,MATCH(TRIM(B5),TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),IFERROR(INDEX([原料价格.xlsx]原料价格目录!$E:$E,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]原料价格目录!$D:$D),0)),IFERROR(INDEX([原料价格.xlsx]跨境原料!$H:$H,MATCH("*"&TRIM(B5)&"*",TRIM([原料价格.xlsx]跨境原料!$E:$E),0)),"未找到"))))
